@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <link rel ="stylesheet" type = "text/css" href = "quantrinona.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#Run").click(function(){
+                $("#Run .subone").slideToggle(500);
+            });            
+        });
+        $(function () {
+            $("#Run1").click(function(){
+                $("#Run1 .subone").slideToggle(500);
+            });            
+        });
+        $(function () {
+            $("#Run2").click(function(){
+                $("#Run2 .subone").slideToggle(500);
+            });                              
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h2>ADMIN</h2>
+        <P><i class="fas fa-sign-out-alt"></i> Đăng xuất</P>
+        <h1>TRANG QUẢN TRỊ BÁN HÀNG NONAKIDS </h1>
+    </div>
+    <div class="content">
+        <div class="nav">
+            <ul class="subnav">
+                <li><a href="#">Trang Chủ</a>
+                </li>
+                <li id="Run">
+                    <div class="sla">
+                        <a href="#">Bán Hàng</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="subone">
+                        <li><a href="#">Hóa Đơn Bán</a></li>
+                        <li><a href="#">Khách Hàng</a></li>
+                    </ul>
+                </li>
+                <li id="Run1">
+                    <div class="sla">
+                        <a href="#">Nhập Hàng</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="subone">
+                        <li><a href="#">Hóa Đơn Nhập</a></li>
+                        <li><a href="#">Hãng Sản Xuât</a></li>
+                        <li><a href="#">Nhà Cung Cấp</a></li>
+                    </ul>
+                </li>
+                <li id="Run2">
+                    <div class="sla">
+                        <a href="#">Danh Mục</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="subone">
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Danh Mục</a></li>
+                        <li><a href="#">Slide Show</a></li>
+                        <li><a href="#">Quảng Cáo</a></li>
+                        <li><a href="#">Người Dùng</a></li>
+                        <li><a href="#">Tài Khoản</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="order-detail">
+            
+            <div class ="formloaihang">
+                <div class = "themro">
+                    <span><i class="fas fa-home"></i>Trang chủ >> Tài khoản >> Trang Quản trị >>Loại Sản Phẩm <br /></span>
+
+                    Tìm kiếm loại SP <input style ="border: 2px solid rgb(192, 209, 172);" type="text" name="Email id" 
+                    value="tìm kiếm loại sp" id="Email id"/>
+                </div><br />
+                <div class = "thongtinro">
+                    <div class ="namero">STT</div>
+                    <div class ="namero">Mã loại</div>
+                    <div class ="namero ro3">Tên loại</div>
+                    <div class ="namero ro4">Mô tả</div>
+                    <div class ="namero">Số lượng</div>
+                    <div class ="namero ro6">Tác vụ</div>
+                </div>
+
+                <div class = "thongtinro form">
+
+                    <div class="namero ro ro1">1</div>
+                    <div class="namero ro ro2">L01</span></div>
+                    <div class="namero ro ro3">Quần áo</div>
+                    <div class="namero ro ro4">mô tả</div>
+                    <div class ="namero ro ro5">04</div>
+                    <div class ="namero ro ro6">
+                        <i style ="padding-right:20px" class="fas fa-tools"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+
+                <div class = "thongtinro form">
+                    <div class="namero ro ro1">2</div>
+                    <div class="namero ro ro2">L02</span></div>
+                    <div class="namero ro ro3">Giầy Sandal</div>
+                    <div class="namero ro ro4">mô tả</div>
+                    <div class ="namero ro ro5">04</div>
+                    <div class ="namero ro ro6"> <i style ="padding-right:20px" class="fas fa-tools"></i>
+                        <i class="far fa-trash-alt"></i></div>
+                </div>
+                <div class = "thongtinro form">
+                    <div class="namero ro ro1">...</div>
+                    <div class="namero ro ro2"></span></div>
+                    <div class="namero ro ro3"></div>
+                    <div class="namero ro ro4"></div>
+                    <div class ="namero ro ro5"></div>
+                    <div class ="namero ro ro6"></div>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+            <div class ="formloaihang sanpham">
+                <div class = "themro"><br /><br /><br />
+                    <span><i class="fas fa-home"></i>Trang chủ >> Tài khoản >> Trang Quản trị >>Các sản phẩm <br /></span>
+                    Nhập tên loại SP cần tìm <input  type="text" name="Email id"
+                    value="Tìm kiếm tên SP" id="Email id"/>
+                </div><br />
+                <div class = "thongtinro thongtinro2">
+                    <div class ="namero do1">STT</div>
+                    <div class ="namero do2">Mã sản phẩm</div>
+                    <div class ="namero do3">Tên Sản phẩm</div>
+                    <div class ="namero do4">Mô tả</div>
+                    <div class ="namero do5">HÌnh ảnh</div>
+                    <div class ="namero do6">Màu sắc</div>
+                    <div class ="namero do7">Khuyến mại</div>
+                    <div class ="namero do8">Số lượng</div>
+                    <div class ="namero do9">Tác vụ</div>
+                </div>
+                <div class = "thongtinro thongtinro2 form">
+                    <div class ="namero ro do1">1</div>
+                    <div class ="namero ro do2">SP01</div>
+                    <div class ="namero ro do3">Áo cotton</div>
+                    <div class ="namero ro do4">Mô tả 1</div>
+                    <div class ="namero ro do5"><img src="nonamoi/quanao (10).jpg"/></div>
+                    <div class ="namero ro do6">xanh<br />đen</div>
+                    <div class ="namero ro do7">10%</div>
+                    <div class ="namero ro do8">30</div>
+                    <div class ="namero ro do9"> <i style ="padding-right:20px" class="fas fa-tools"></i>
+                        <i class="far fa-trash-alt"></i></div>
+                </div>
+                <div class = "thongtinro thongtinro2 form">
+                    <div class ="namero ro do1">2</div>
+                    <div class ="namero ro do2">SP02</div>
+                    <div class ="namero ro do3">Áo cotton 2</div>
+                    <div class ="namero ro do4">Mô tả 2</div>
+                    <div class ="namero ro do5"><img src="nonamoi/quanao (11).jpg"/></div>
+                    <div class ="namero ro do6">trắng<br />xanh</div>
+                    <div class ="namero ro do7">10%</div>
+                    <div class ="namero ro do8">20</div>
+                    <div class ="namero ro do9"> <i style ="padding-right:20px" class="fas fa-tools"></i>
+                        <i class="far fa-trash-alt"></i></div>
+                </div>
+                <div class = "thongtinro thongtinro2 form">
+                    <div class ="namero ro do1">3</div>
+                    <div class ="namero ro do2">SP03</div>
+                    <div class ="namero ro do3">Áo cotton 3</div>
+                    <div class ="namero ro do4">Mô tả 3</div>
+                    <div class ="namero ro do5"><img src="nonamoi/quanao (12).jpg"/></div>
+                    <div class ="namero ro do6">trắng<br />vàng</div>
+                    <div class ="namero ro do7">10%</div>
+                    <div class ="namero ro do8">40</div>
+                    <div class ="namero ro do9"> <i style ="padding-right:20px" class="fas fa-tools"></i>
+                        <i class="far fa-trash-alt"></i></div>
+                </div>
+               
+            </div>
+                        
+            
+        </div>	
+    </div>
+                
+</body>
+</html>
